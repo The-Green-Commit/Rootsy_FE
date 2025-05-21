@@ -12,7 +12,7 @@ function Footer() {
                 background-color: ${theme.palette.lime.main};
                 position: fixed;
                 width: -webkit-fill-available;
-                height: 10vh;
+                height: 11vh;
                 left: 0;
                 bottom: 0;
                 z-index: 100`}
