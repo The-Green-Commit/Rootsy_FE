@@ -1,14 +1,13 @@
-import Button from "./components/Button"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import RandomPlantModule from "./components/RandomPlantModule"
+import HomePage from "./pages/HomePage"
 
 function App() {
 
   return (
     <>
       <Header />
-      <RandomPlantModule />
+      <HomePage />
       <Footer />
     </>
   )

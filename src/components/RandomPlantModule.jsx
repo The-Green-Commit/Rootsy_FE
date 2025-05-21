@@ -11,7 +11,7 @@ function RandomPlantModule() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 86vh;`}
+                height: 48vh;`}
         >
             <div
                 css={css`
