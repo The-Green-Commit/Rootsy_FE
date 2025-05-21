@@ -33,10 +33,6 @@ function Header() {
                     z-index: 100;
                     padding: 5px`}
                 >
-                {/* // css={css`
-                //     width: auto;
-                //     length: 20px`}
-                    */}
             <img src="src/assets/logos/rootsy_logo.png"
                 css={css`
                     width: auto;
