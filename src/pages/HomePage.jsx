@@ -52,7 +52,7 @@ function HomePage() {
                         flex-direction: row;
                         justify-content: space-between;
                         align-items: center;
-                        widht: 38vh;`}
+                        width: 38vh;`}
                 >
                     <Button 
                         text="FIND A PLANT"
