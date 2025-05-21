@@ -14,7 +14,10 @@ function Button (props) {
                     opacity: 0.75;
                     font-size: 18px;
                     padding: 18px;
-                    height: 8vh;`}
+                    height: 8vh;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    border-bottom: solid;`}
                 >
                     {props.text}
                 </button>

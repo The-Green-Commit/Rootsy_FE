@@ -11,7 +11,8 @@ function RandomPlantModule() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 48vh;`}
+                height: 50vh;
+                margin-bottom: 1vh;`}
         >
             <div
                 css={css`
@@ -44,7 +45,9 @@ function RandomPlantModule() {
                         background-color: ${theme.palette.mediumGreen.main};
                         opacity: 0.95;
                         font-size: 15px;
-                        height: 3vh;`}
+                        height: 3vh;
+                        border-radius: 30px;
+                        border-bottom: solid;`}
                 >
                     Read More
                 </Button>

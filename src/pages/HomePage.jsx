@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import theme from '../themes/MainTheme';
 import { css } from '@emotion/react'
 import RandomPlantModule from "../components/RandomPlantModule";
+import Button from '../components/Button';
 
 function HomePage() {
     return (
@@ -11,7 +11,7 @@ function HomePage() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 80vh;
+                height: 97vh;
                 font-family: 'Roboto';`}
         >
             <div
@@ -29,12 +29,39 @@ function HomePage() {
                 />
                 <h2
                     css={css`
-                    margin-left: 10px;`}
+                        margin-left: 10px;`}
                 >
                     Hello, Plantlover!
                 </h2>
             </div>
             <RandomPlantModule />
+            <section
+            css={css`
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Roboto';`}
+            >
+                <h2>
+                What do you want to do?
+                </h2>
+                <div
+                    css={css`
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        widht: 38vh;`}
+                >
+                    <Button 
+                        text="FIND A PLANT"
+                    />
+                    <Button 
+                        text="ADD A PLANT"
+                    />
+                </div>
+            </section>
         </main>
     )
 }
