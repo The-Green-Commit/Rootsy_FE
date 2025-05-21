@@ -1,8 +1,23 @@
 /** @jsxImportSource @emotion/react */
+import React from 'react';
+import { IconButton } from '@mui/material';
 import theme from '../themes/MainTheme';
-import { css } from '@emotion/react'
+import { css } from '@emotion/react';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 function Header() {
+    
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+    setAnchorEl(null);
+    };
+
+    
     return (
         <header 
                 css={css`
@@ -27,21 +42,32 @@ function Header() {
                     width: auto;
                     height: 70px`}
             />
-            <div>
-                <img src="src/assets/icons/search_icon.png"
-                    css={css`
+        <IconButton 
+            id="basic-button"
+            aria-controls={open ? 'basic-menu' : undefined}
+            aria-haspopup="true"
+            aria-expanded={open ? 'true' : undefined}
+            onClick={handleClick}
+        >
+            <img src="src/assets/icons/menu_icon.png"
+                css={css`
                     width: auto;
-                    height: 45px;
-                    padding: 5px`}
-                />
-                <img src="src/assets/icons/home_icon.png"
+                    height: 50px`}
+            />
+        </IconButton>
+            <Menu
+            id="basic-menu"
+            anchorEl={anchorEl}
+            open={open}
+            onClose={handleClose}
                     css={css`
-                    width: auto;
-                    height: 45px;
-                    padding: 5px`}
-                />
-            </div>
-        </header>
+                    font-family:""`}
+            >
+            <MenuItem onClick={handleClose}>Home</MenuItem>
+            <MenuItem onClick={handleClose}>Find a Plant!</MenuItem>
+            <MenuItem onClick={handleClose}>Add a plant!</MenuItem>
+            </Menu>
+            </header>
     )
 }
 
