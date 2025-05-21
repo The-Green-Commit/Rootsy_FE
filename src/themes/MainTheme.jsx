@@ -8,13 +8,13 @@ import { red } from '@mui/material/colors';
 const theme = createTheme({
   cssVariables: true,
   palette: {
-    primary: {
+    lime: {
       main: lime[100],
     },
-    secondary: {
+    orange: {
       main: orange.A200,
     },
-    third: {
+    mediumGreen: {
         main: green[300],
     },
     error: {
