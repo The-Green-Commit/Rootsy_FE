@@ -19,7 +19,7 @@ function RandomPlantModule() {
                 margin: 2px 0 2px 0;
                 padding: 0 15px 4px 15px;
                 background-color: ${theme.palette.orange.main};
-                opacity: 0.65;
+                opacity: 0.75;
                 align-items: center;
                 height: 6vh;`}
             >
