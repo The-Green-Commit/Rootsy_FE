@@ -59,7 +59,7 @@ npm run dev
 **The application will run by default on http://localhost:5173** <br>
 
 
-### ⚠️ Importante!
+### ⚠️ Important!
 >**This frontend connects to a JAVA Spring Boot backend that must be active for full functionality.** <br>
 
 
