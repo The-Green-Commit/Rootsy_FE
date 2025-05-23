@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import React from 'react';
+import { useNavigate } from 'react-router';
 import { IconButton } from '@mui/material';
 import theme from '../themes/MainTheme';
 import { css } from '@emotion/react';
@@ -15,6 +16,11 @@ function Header() {
     };
     const handleClose = () => {
     setAnchorEl(null);
+    };
+    const navigate = useNavigate();
+    const handleMenuClick = (path) => {
+    handleClose();
+    navigate(path);
     };
 
     
@@ -38,19 +44,21 @@ function Header() {
                     width: auto;
                     height: 70px`}
             />
-        <IconButton 
-            id="basic-button"
-            aria-controls={open ? 'basic-menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
-        >
-            <img src="src/assets/icons/menu_icon.png"
-                css={css`
-                    width: auto;
-                    height: 50px`}
-            />
-        </IconButton>
+
+            <IconButton 
+                id="basic-button"
+                aria-controls={open ? 'basic-menu' : undefined}
+                aria-haspopup="true"
+                aria-expanded={open ? 'true' : undefined}
+                onClick={handleClick}
+            >
+                <img src="src/assets/icons/menu_icon.png"
+                    css={css`
+                        width: auto;
+                        height: 50px`}
+                />
+            </IconButton>
+        
             <Menu
             id="basic-menu"
             anchorEl={anchorEl}
@@ -59,10 +67,12 @@ function Header() {
                     css={css`
                     font-family:""`}
             >
-            <MenuItem onClick={handleClose}>Home</MenuItem>
-            <MenuItem onClick={handleClose}>Find a Plant!</MenuItem>
-            <MenuItem onClick={handleClose}>Add a plant!</MenuItem>
+                <MenuItem onClick={() => handleMenuClick('/')}>Home</MenuItem>
+                <MenuItem onClick={() => handleMenuClick('/search')}>Find a Plant!</MenuItem>
+                {/* <MenuItem onClick={handleClose}>Add a plant!</MenuItem> */}
+            
             </Menu>
+
             </header>
     )
 }

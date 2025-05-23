@@ -6,7 +6,7 @@ import { Link } from 'react-router';
 function Button (props) {
     return (
         <>
-            {/* <Link> */}
+            <Link to={props.link}>
                 <button onClick={props.onClick} disabled={props.disabled}
                     css={css`
                     color: black;
@@ -21,7 +21,7 @@ function Button (props) {
                 >
                     {props.text}
                 </button>
-            {/* </Link> */}
+            </Link>
         </>
     )
 }

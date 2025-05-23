@@ -56,9 +56,11 @@ function HomePage() {
                 >
                     <Button 
                         text="FIND A PLANT"
+                        link='/search'
                     />
                     <Button 
                         text="ADD A PLANT"
+
                     />
                 </div>
             </section>
