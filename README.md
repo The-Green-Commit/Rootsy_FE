@@ -67,3 +67,5 @@ npm run dev
 🌲 Organization Repo: [The Green Commit](https://github.com/The-Green-Commit) <br>
 🎨 FE Code: [Rootsy Frontend](https://github.com/The-Green-Commit/Rootsy_FE) <br>
 📂 BE Code: [Rootsy Backend](https://github.com/craft-coders-llc/commit-me-BE)
+
+![image](https://github.com/user-attachments/assets/f05d271c-5115-4f47-9da6-03b9f735465e)
