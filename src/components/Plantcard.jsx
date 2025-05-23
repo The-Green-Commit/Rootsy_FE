@@ -1,7 +1,6 @@
+/** @jsxImportSource @emotion/react */
+import { css } from '@emotion/react'
 import { useEffect, useState } from "react";
-import * as React from 'react';
-import Stack from '@mui/material/Stack';
-import CircularProgress from '@mui/material/CircularProgress';
 
 function Plantcard () {
 
@@ -12,9 +11,19 @@ function Plantcard () {
     }, []);
 
     if (!plants) return (
-        <Stack sx={{ color: 'grey.500' }} spacing={2} direction="row">
-            <CircularProgress color="inherit" />
-        </Stack>)
+        <section 
+            css={css`
+                label: cardNotFound-section;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Roboto';`}
+        >
+            <img src="src/assets/images/robot_NotFound.png"/>
+            <p>No plants found</p>
+        </section>
+    )
 
     return (
     <>

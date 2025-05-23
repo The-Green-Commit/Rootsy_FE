@@ -5,6 +5,7 @@ import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';
 import TextField from '@mui/material/TextField';
+import PlantsList from '../components/Plantlist';
 
 function PlantsearchPage() {
     return (
@@ -16,7 +17,7 @@ function PlantsearchPage() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 56vh;
+                height: 90vh;
                 font-family: 'Roboto';`}
         >
             <section
@@ -95,7 +96,7 @@ function PlantsearchPage() {
 
                 <div
                     css={css`
-                        display: flex;
+                    display: flex;
                     flex-direction: row;
                     align-items: center;
                     justify-content: flex-start;
@@ -138,20 +139,34 @@ function PlantsearchPage() {
 
             <section
                 css={css`
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-                width: 37vh;`}
+                    label: plantresults-section;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 37vh;`}
             >
-                <h2
+                <div
                     css={css`
-                    margin-left: 10px;`}
+                    align-items: self-start;
+                    width: 37vh;`}
                 >
-                    Results:
-                </h2>
-
+                    <h2>
+                        Results:
+                    </h2>
+                </div>
                 
+                <div
+                css={css`
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Roboto';
+                width: 37vh;`}    
+                >
+                    <PlantsList/>
+                </div>
 
             </section>
         </main>
