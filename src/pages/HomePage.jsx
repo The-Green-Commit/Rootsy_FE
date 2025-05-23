@@ -7,6 +7,7 @@ function HomePage() {
     return (
         <main
             css={css`
+                label: homepage-main;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -14,7 +15,7 @@ function HomePage() {
                 height: 97vh;
                 font-family: 'Roboto';`}
         >
-            <div
+            <section
                 css={css`
                     display: flex;
                     flex-direction: row;
@@ -33,7 +34,7 @@ function HomePage() {
                 >
                     Hello, Plantlover!
                 </h2>
-            </div>
+            </section>
             <RandomPlantModule />
             <section
             css={css`
