@@ -16,7 +16,7 @@ function PlantsearchPage() {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                height: 46vh;
+                height: 56vh;
                 font-family: 'Roboto';`}
         >
             <section
@@ -48,7 +48,8 @@ function PlantsearchPage() {
                     flex-direction: row;
                     align-items: center;
                     justify-content: flex-start;
-                    width: 37vh;`}>
+                    width: 37vh;
+                    margin-bottom: 1vh;`}>
                     <Box sx={{ minWidth: 120 }}
                         css={css`
                         margin-right: 20px;`}>
@@ -133,6 +134,24 @@ function PlantsearchPage() {
                     </Box>
 
                 </div>
+            </section>
+
+            <section
+                css={css`
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                width: 37vh;`}
+            >
+                <h2
+                    css={css`
+                    margin-left: 10px;`}
+                >
+                    Results:
+                </h2>
+
+                
 
             </section>
         </main>
